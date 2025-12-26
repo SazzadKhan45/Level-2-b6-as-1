@@ -59,6 +59,8 @@ console.log(userRole);
 
 ## Union Types (|)
 
+    A union type allows a variable, parameter, or property to hold more than one type. You define a union type using the pipe (|) symbol.
+
 function printId(id: string | number) {
 if (typeof id === "string") {
 console.log(`ID (string): ${id.toUpperCase()}`);
@@ -71,6 +73,11 @@ printId("abc");
 printId(101);
 
 # Intersection Types (&)
+
+    An intersection type is a type that combines multiple types into one.
+    It is defined using the ampersand (&) symbol.
+
+    A value of an intersection type must satisfy all the types combined — it will have all properties and methods from each type.
 
 interface Person {
 name: string;
